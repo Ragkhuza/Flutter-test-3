@@ -39,8 +39,10 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       // debugShowMaterialGrid: true,
       theme: ThemeData(
+        brightness: Brightness.light,
         primarySwatch: Colors.deepOrange,
         accentColor: Colors.blueGrey,
+        buttonColor: Colors.blue,
       ),
       // home: AuthPage(),
       routes: {
@@ -58,6 +60,8 @@ class _MyAppState extends State<MyApp> {
             builder: (BuildContext context) => ProductPage(
                   _products[index]["title"],
                   _products[index]["image"],
+                  _products[index]["price"],
+                  _products[index]["description"],
                 ),
           );
         }
