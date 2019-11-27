@@ -58,7 +58,7 @@ class ProductPage extends StatelessWidget {
               child: RaisedButton(
                 color: Theme.of(context).accentColor,
                 child: Text("Delete!"),
-                onPressed: () =>_showWarningDialog(context),
+                onPressed: () => _showWarningDialog(context),
               ),
             ),
           ],
